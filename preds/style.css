@@ -1,12 +1,12 @@
 *{
-    background-color: yellow;
+    background-color: rgb(118, 117, 117);
 }
 
-h1{
+.top{
     text-align: center;
     color: black;
     font-size: 75px;
-    background-color: darkblue;
+    background-color: white;
 }
 
 .center{
@@ -16,6 +16,23 @@ h1{
     
 }
 
-p{
+.times{
     color: black;
+    background-color: white;
+    
+}
+
+.head{
+    color: black;
+    background-color: white;
+    text-align: center;
+}
+
+.box{
+    float: left;
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    margin-bottom: 20px;
+
 }
