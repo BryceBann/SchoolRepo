@@ -17,6 +17,7 @@ header {
 /* 
 What happens when we set the display property to flex? 
 TODO: Write your answer here 
+changes the height of the nav bar menu
 */
 nav {
   display: flex;
@@ -33,6 +34,7 @@ nav a {
 /* 
 What is the flex-wrap property? 
 TODO: Write your answer here 
+it makes sure that all the contents fit on the webpage
 */
 main {
   display: flex;
@@ -57,6 +59,7 @@ footer {
 /* 
 What does the justify-content property do? 
 TODO: Write your answer here 
+tells where the boxes in the flex to go only moves side to side
 */
 .products {
   flex: 4;
@@ -96,6 +99,7 @@ TODO: Write your answer here
 What does the flex-direction property define?
 What is it doing here? 
 TODO: Write your answer here 
+tells how the input will be displayed 
 */
 @media screen and (max-width: 768px) {
   main,

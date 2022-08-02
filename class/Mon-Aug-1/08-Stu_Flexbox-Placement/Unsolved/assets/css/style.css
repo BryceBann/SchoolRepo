@@ -48,13 +48,16 @@ footer {
 
 .product button {
   font-size: 150%;
+  flex-wrap: wrap;
+  margin: auto;
   
 }
 
 .product-slideshow {
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  
+  
+  
 }
 
 .product-image {
