@@ -75,3 +75,17 @@ footer{
     
     
 }
+
+#weeks{
+    text-align: left; 
+    background-color: black;
+    padding-right: 10px;
+}
+
+a:link{
+    color: white;
+}
+
+a:visited{
+    color: white;
+}
