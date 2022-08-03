@@ -62,7 +62,6 @@ article p {
 /* TODO: Style the term/phrase - underline, black text, grab cursor */
  span[data-descr]{
   text-decoration: underline;
-  display: inline;
   cursor: grab;
   
 }
@@ -77,6 +76,21 @@ span[data-descr]:hover::after{
   top: auto;
   padding: 7px;
   border: 1px black solid;
+}
+
+span[data-double]{
+  text-decoration: underline;
+  cursor: zoom-in;
+  
+}
+span[data-double]:hover::before{
+  content: attr(data-double);
+  border: 2px blue solid;
+  background-color: lime;
+  bottom: auto;
+  top: 78%;
+  position: absolute;
+
 }
 
 aside {

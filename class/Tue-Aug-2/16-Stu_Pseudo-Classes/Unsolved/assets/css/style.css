@@ -89,14 +89,16 @@ footer {
 
 /* TODO: Add styles to display and hide the resource links */
 
-.resources li{
+.resources ul li{
   display: none;
   padding: 1% 0;
-
+  list-style: circle black;
+  
 }
 
-.resources:hover li{
+.resources:hover ul li{
   display: block;
+  list-style: circle black;
   
 }
 
