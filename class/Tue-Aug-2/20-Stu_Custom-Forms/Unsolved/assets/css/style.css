@@ -85,7 +85,8 @@ button {
   cursor: pointer;
 }
 
-/* What does this CSS rule do? */
+/* What does this CSS rule do? 
+changing the drop down buttom and location of the drop down box as well as only displaying one button*/
 select {
   -moz-appearance: none;
   -webkit-appearance: none;
@@ -112,12 +113,14 @@ select:hover, button:hover {
   box-shadow: 0 0 5px #999;
 }
 
-/* What does this pseudo-class mean? */
+/* What does this pseudo-class mean?
+adds a small border to the right side of the name input text box*/
 .text-input:focus {
   border-right-width: 5px;
 }
 
-/* What does this pseudo-class mean? */
+/* What does this pseudo-class mean? 
+changes the border on the input text box to a adashed border*/
 .text-input:placeholder-shown {
   border-style: dashed;
 }
@@ -136,13 +139,15 @@ select:hover, button:hover {
   margin-right: 2%;
 }
 
-/* What does this selector do? */
+/* What does this selector do? 
+changes the font style and text color after the check box is checked*/
 .checkbox:checked + label {
   color: #999999;
   font-style: italic;
 }
 
-/* What does this selector do? */
+/* What does this selector do? 
+adds the text "thanks" to the end of the orginal text after checkbox is checked*/
 .checkbox:checked + label::after {
   margin-left: 10px;
   font-size: 90%;
