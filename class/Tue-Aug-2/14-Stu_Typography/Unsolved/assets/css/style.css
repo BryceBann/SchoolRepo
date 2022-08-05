@@ -17,14 +17,14 @@ header {
 
 /* TODO: Change the heading size to 200%, give it a margin all around, and assign font family to serif */
 h1 {
-  font-size: 175%;
+  font-size: 200%;
   margin: 25px 0px 25px 5px;
   font-family: serif;
 }
 
 /* TODO: Change the heading size to be slightly smaller than h1, give it a margin only on the top and bottom, and assign font family to serif */
 h2 {
-  font-size: 150%;
+  font-size: 175%;
   margin-top: 15px;
   margin-bottom: 10px;
   font-family: serif;
@@ -32,7 +32,7 @@ h2 {
 
 /* TODO: Change header size to be slightly smaller than h2 and assign font family to serif */
 h3 {
-  font-size: 125%;
+  font-size: 150%;
   font-family: serif;
 }
 
