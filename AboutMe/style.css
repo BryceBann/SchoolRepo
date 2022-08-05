@@ -13,7 +13,8 @@
 header{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
-    height:25%;
+    height:126px;
+    
 }
     
 h1{
@@ -22,14 +23,22 @@ h1{
     
 }
 
-.study{
-    width: 20%;  
-    height: 6em;
+div a{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     color: white;
-    margin-left: auto;
-    position: relative; 
+    height:25%;
+    float: right;
+    position: relative; bottom: 97px;
+    font-size: 25px;
     background-color: black;
-    
+    margin-right: 15px;
+    text-decoration: none;
+}
+
+#pro{
+    display: inline;
+    position:relative; left:45%; bottom: 97px;
+    font-size: 18px;
 }
 
 p{  
@@ -38,6 +47,10 @@ p{
 
 }
 
+.photo{
+    height: 25%;
+    width: 100%;
+}
 
 .foot{
     color: white;
