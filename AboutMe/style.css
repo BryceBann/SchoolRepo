@@ -50,6 +50,8 @@ p{
 .photo{
     height: 25%;
     width: 100%;
+    border: 2px black solid;
+   
 }
 
 .foot{
@@ -57,5 +59,7 @@ p{
     background-color: black;
     height: auto;
     text-align: center;
+    height: 75px;
+    font-size: 45px;
     
 }
