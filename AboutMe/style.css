@@ -1,92 +1,48 @@
+
 *{
-    background-color: aqua;
+    background-color: var(--cream);
+    border: 3px black;
+    font-size: 20px;
+
 }
 
-header,
-#h1{
+:root{
+    --cream: rgb(230, 209, 171);
+}
+
+header{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 45px;
-    text-align: center;
     color: white;
-    background-color: black;
-    height:55px;
+    height:25%;
+}
     
-}
-
-.List{
+h1{
     background-color: black;
-    width: 500px;
-    height: 400px;
-    border: 1px black;
-    margin: 5px;
-    color: white;
-    
-}
-
-ul,
-li{
-    padding-top: 10px;
-    background-color: black;
-    color: white;
-
-}
-
-.foot,
-footer{
-    color: white;
-    background-color: black;
-    margin-top: 0%;
-    height: 100px;
-    margin-bottom: 0px;
-    text-align: center;
-    font-size: 50px;
-
-}
-
-.p1,
-.p3{
-    background-color: black;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 30px;
-}
-
-.p2,
-.p4,
-.p5{
-    background-color: black;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    padding-right: 25px;
+    font-size: 99px;
     
 }
 
 .study{
-    background-color: black;
-    width: 500px;
-    height: 400px;
-    border: 1px black;
-    margin: 5px;
+    width: 20%;  
+    height: 6em;
     color: white;
     margin-left: auto;
-    position: relative; bottom: 430px;
-    text-align: center;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    
-    
-    
-}
-
-#weeks{
-    text-align: left; 
+    position: relative; 
     background-color: black;
-    padding-right: 10px;
+    
 }
 
-a:link{
-    color: white;
+p{  
+    background-color: black;
+    text-align: right;
+
 }
 
-a:visited{
+
+.foot{
     color: white;
+    background-color: black;
+    height: auto;
+    text-align: center;
+    
 }
