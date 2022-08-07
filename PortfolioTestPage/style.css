@@ -52,7 +52,7 @@ p{
 
 }
 
-.photo{
+#photo{
     height: 25%;
     width: 100%;
     border: 2px black solid;
@@ -73,14 +73,31 @@ p{
     *{
     color: blue;
     float: none;
-    
-
+    box-sizing: border-box;
+    width: 100%;
+    text-align: center;
     }
 }
 
 @media screen and (max-width: 992px) {
-    div a{ 
+    div{ 
         color: blue;
+        background-color: black !important;
+        width: 100%;
+        
+              
     }
 } 
+
+@media screen and (max-width:992px){
+    #pro{
+        text-align: center !important;
+
+    }
+}
     
+
+    
+
+    
+
