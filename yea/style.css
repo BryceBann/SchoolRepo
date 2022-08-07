@@ -1,0 +1,50 @@
+*{
+    background-color: grey;
+}
+
+.first{
+    color: blue;
+}
+
+span[data-descr]{
+    color: red;
+}
+
+span[data-descr]:hover::after{
+    content: attr(data-descr);
+    border: 2px yellow dotted;
+    bottom: 14px;
+    position: absolute;
+    background-color: rgb(66, 253, 97);
+}
+
+.img1{
+    height: 400px;
+    width: 250px;
+    border-radius: 30px;
+    transform:rotate(15deg);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 10px 15px orange;
+}
+
+footer{
+    height: 50px;
+    background-color: purple;
+    margin-top: 75px;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+
+.img2{
+    transform: skew(69deg);
+    height: 400px;
+    width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: 99px;
+
+}
