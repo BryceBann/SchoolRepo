@@ -33,23 +33,6 @@ footer{
     font-weight: 600;
 }
 
-.photo{
-    background-color: white;
-    border: 2px black solid;
-    height: 400px;
-    width: 600px;
-    padding-top: 10px;
-    padding-left: 10px;
-    margin-left: 625px;
-    margin-bottom: 400px;
-  
-}
-
-#photo{
-    height: 390px;
-    width: 590px;
-}
-
 .bio{
     width: 612px;
 }

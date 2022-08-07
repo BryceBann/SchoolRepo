@@ -35,6 +35,11 @@ div a{
     text-decoration: none;
 }
 
+div a:hover {
+    background-color: white;
+    color: black;
+
+}
 #pro{
     display: inline;
     position:relative; left:45%; bottom: 97px;
@@ -63,3 +68,19 @@ p{
     font-size: 45px;
     
 }
+
+@media screen and (max-width: 992px) {
+    *{
+    color: blue;
+    float: none;
+    
+
+    }
+}
+
+@media screen and (max-width: 992px) {
+    div a{ 
+        color: blue;
+    }
+} 
+    
