@@ -44,12 +44,8 @@ div a:hover {
     display: inline;
     position:relative; left:45%; bottom: 97px;
     font-size: 18px;
-}
-
-p{  
     background-color: black;
     text-align: right;
-
 }
 
 #photo{
@@ -58,6 +54,16 @@ p{
     border: 2px black solid;
    
 }
+
+#AboutMe h2,
+#Work h3{
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 45px;
+}
+
+
 
 .foot{
     color: white;
