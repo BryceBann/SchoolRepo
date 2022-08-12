@@ -8,21 +8,21 @@
     <link rel="stylesheet" a href="./style.css">
 </head>
 <body>
-
+<!--top of page including name current profession and active UI nav links-->
     <header>
         <div id="header1">
         <h1>Bryce Bann</h1>
         <p>Coding and fullstack development</p>
         <nav>
-            <a href="#AboutMe">About Me</a>
-            <a href="">Work</a>
-            <a href="">Contact Me</a>
+            <a href="#AboutMe" class="link">About Me</a>
+            <a href="#work" class="link">Work</a>
+            <a href="" class="link">Contact Me</a>
         </nav>
     </div>
     </header>
-    
+    <!--main body of the webpage with about me info my current and past experince through coding-->
 <div>
-    <section>
+    <section class="AboutMe">
         <img src="./Images/Kids_Me.jpg" class="main-photo">
         <article id="AboutMe">
             <div>
@@ -36,8 +36,8 @@
         </article>
     </section>
 </div>
-
-<div class="container">
+<!--Work section to show all completed and in progess webpages and applcations with active links to current webpage and github repo-->
+<div id="container">
     <section class="Work">
     <div class="column">
         <a href="https://github.com/BryceBann" target="_blank" class="git-link">
@@ -57,9 +57,22 @@
     </section>
 </div>
 
+<div class="container2">
+    <section class="Contact">
+        <div class="ContactIntro">
+            <h2>Contact Me</h2>
+            <p class="ContactInfo">Feel free to contact me with any of the below options</p>
+            <ul>
+                <li>Phone: 615-347-3191</li>
+                <li>Email: punkrice@gmail.com </li>
+            </ul>
+        </div>
+    </section>
+</div>
+
 
     <footer>
-
+     <h2>Made with CSS and Coffee</h2>
     </footer>
 
 
@@ -71,23 +84,4 @@
 </html>
 
 
-<!--<div id="work">
-    <section class="Work">
-        <div id="port1">
-         <h2 id="work-head">Projects</h2>
-           <a href="https://github.com/BryceBann" target="_blank" class="git-link">
-             <img src="./Images/GitHub___headpic.webp" class="git-photo" alt="work to come"></a>
-             <p class="git-info">My Github Repo</p>
-            </div>
-            <div id="port2">
-                <a href="#header1" class="toTop">
-                <img src="./Images/code_background.jfif" alt="Work-in-progress" class="Work-in-progress"></a>
-                <p class="wip-text">Work in progress</p>
-            </div>
-           <div id="port3">
-                <a href="#header1" class="toTop">
-                    <img src="./Images/port2-background.webp" alt="code background" class="port3-photo"></a>
-                    <p id="port3-text">Work-in-progress</p>
-            </div>
-    </section>
-</div>-->
+
