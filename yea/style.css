@@ -44,6 +44,8 @@ h1{
     box-shadow: grey 4px 4px;
 }
 
-#playerScore, #computerScore{
-    
+#player-input{
+    display: flex;
+    justify-content: space-evenly;
 }
+
