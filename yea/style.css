@@ -49,3 +49,15 @@ h1{
     justify-content: space-evenly;
 }
 
+.Rock, .Paper, .Scissors{
+    background-color: #4169E1;
+    border-radius: 5px;
+    width: 5rem;
+    margin-top: .2rem;
+    cursor:pointer;
+}
+
+#results{
+    margin-left: 1rem;
+}
+
