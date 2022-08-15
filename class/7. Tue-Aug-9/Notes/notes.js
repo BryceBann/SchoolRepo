@@ -1,4 +1,4 @@
-Basic array build adding and removale of the array elements
+//Basic array build adding and removale of the array elements
 
 var students
 undefined
@@ -6,8 +6,8 @@ students["bryce","caleb","lindsey"]
 
 students=["bryce","caleb","lindsey"]
 (3) ['bryce', 'caleb', 'lindsey']
-0: "bryce"1: "caleb"2: "lindsey"length: 3
-[[Prototype]]: Array(0)
+//0: "bryce"1: "caleb"2: "lindsey"length: 3
+
 
 students.pop()   //removes the last part of the array
 'lindsey'
@@ -26,15 +26,14 @@ students[1]
 'caleb'
 
 console.log("The second student on the list is" + students[1])
- The second student on the list iscaleb
+ //The second student on the list is caleb
 
 students[1]="tristan"
 'tristan'
 
 students
 (3) ['bryce', 'tristan', 'grant']
-0: "bryce"1: "tristan"2: "grant"length: 3
-[[Prototype]]: Array(0)
+//0: "bryce"1: "tristan"2: "grant"length: 3
 
 students.push(42069)  //add information to the end of the array
 4
@@ -57,7 +56,7 @@ students.splice(2,1) // can remove an exact part of the array
 
 
 
-Basic for loop and using and array to to make the loop x amount of times
+//Basic for loop and using and array to to make the loop x amount of times
 
 var cars = ["ford", "honda", "nissan", "lexus"]
 
@@ -85,21 +84,21 @@ for(var i = 0; i<cars.length; i++){ // will print out the amount of items in arr
  lexus
 
 for(var i = 0; i<cars.length; i++){  // will loop to the amount of times in the array and will print the console log message
-    console.log(`name of the car + cars[i])
+    console.log(`name of the car `+ cars[i])
 }
 
 
-basic function
+//basic function
 
 function helloWorld(){
     console.log("hello world")
 }
 
 helloWorld()
- hello world
+ //hello world
 
  function hellWorld(name){
-    console.log("hello world + name)
+    console.log("hello world + name")
     return;
  }
 
@@ -120,7 +119,7 @@ var sumFunction = function(number1, number2){
     4
 
 
-scope is what a variable is limited to use 
+//scope is what a variable is limited to use 
 
 // will combined both arrays to new array 
 var students = ["alex", "brain", "mark"]
@@ -129,4 +128,3 @@ var students1 = ["brain", "tony", "bill"]
 
 var students2 = students.concat(students1);
 console.log(students2) 
-
