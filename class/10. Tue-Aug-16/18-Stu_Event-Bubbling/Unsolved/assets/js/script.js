@@ -1,6 +1,8 @@
 // TODO: Which element is the following line of code selecting?
+//the code below is selecting the div for the holding the buttons and img
 var carousel = document.querySelector(".carouselbox");
 // TODO: Which element is the following line of code selecting?
+//the actual button to move the carousle
 var next = carousel.querySelector(".next");
 var prev = carousel.querySelector(".prev");
 var index = 0;
@@ -27,11 +29,13 @@ function navigate(direction) {
 }
 
 // TODO: Describe the functionality of the following event listener.
+//listens for the click  to change the image 
 carousel.addEventListener("click", function() {
   window.location.href = images[index];
 });
 
 // TODO: Describe the functionality of the following event listener.
+//listens for the click to determain the direction for the carousel to move
 next.addEventListener("click", function(event) {
   // TODO: What is the purpose of the following line of code?
   event.stopPropagation();
