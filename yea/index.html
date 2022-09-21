@@ -1,55 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Practice Page</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-<header>
-    <div id="page-intro">
-        <h1>Java interact page</h1>
-    </div>
-</header>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./Backend/style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.1.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <title>Music Picker</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <input id="artistInput">
+          <button class="btn bg-primary text-light" id="search-button"><i class="fa fa-search"></i></button>
+        </div>
 
-
-<div id="first-app">
-    <main>
-        <p class="FA-text">Rock Paper Scissors</p>
-        <div id="rps-input">
-            <div id="score">
-                <div id="playerScore">
-                   <h2>Player:</h2>
-                   <span class="playerCount">0</span>
-                </div>
-                <div id="computerScore">
-                    <h2>Computer:</h2>
-                    <span class="computerCount">0</span>
-                </div>
-                <div id="ties">
-                    <h2>Ties:</h2>
-                    <span class="tieCount">0</span>
-                </div>
-                <div id="player-input">
-                    <button class="Rock">Rock</button>
-                    <button class="Paper">Paper</button>
-                    <button class="Scissors">Scissors</button>
-                </div>
-                <div id="results"></div>
-
-            </div>
+        <div class="col">
 
         </div>
-    </main>
+      </div>
+    </div>
+   
 
+    <script src="./Backend/java.js"></script>
 
-</div>
-<script src="./java.js"></script>
-
-
-</body>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+  </body>
 </html>
