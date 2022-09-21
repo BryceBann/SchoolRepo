@@ -64,16 +64,16 @@ var netflixQueue = {
     "Fight Club"
   ],
   watchMovie: () => {
-    this.queue.pop();
+    netflixQueue.queue.pop();
   },
   addMovie: (movie) => {
-    this.queue.unshift(movie);
+    netflixQueue.queue.unshift(movie);
   },
   printQueue: () => {
     var list = "";
-    for (var i = this.queue.length - 1; i >= 0; i--) {
-      var currentMovie = this.queue[i];
-      list += (this.queue.length - i) + ". " + currentMovie + "\n";
+    for (var i = netflixQueue.queue.length - 1; i >= 0; i--) {
+      var currentMovie = netflixQueue.queue[i];
+      list += (netflixQueue.queue.length - i) + ". " + currentMovie + "\n";
     }
     console.log(list);
   }
