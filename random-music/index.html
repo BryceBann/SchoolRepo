@@ -11,20 +11,35 @@
     <title>Music Picker</title>
   </head>
   <body>
+    <!-- Top of web page -->
+    <div class= "jumbotron container-fluid text-center p-2">
+      <h1><strong>Random music selector</strong></h1>
+    </div>
+<!-- start of UI -->
     <div class="container">
-      <div class= "jumbotron container-fluid text-center p-2">
-        <h1><strong>Random music selector</strong></h1>
-      </div>
-      <div class="row">
+      <div class="row m-2">
         <div class="col">
           <input id="artistInput" placeholder="Enter artist here">
           <button class="btn bg-primary text-light" id="search-button"><i class="fa fa-search">Search Artist</i></button>
         </div>
-
+      </div>
+      <div class="row m-2">
         <div class="col">
+          <div id="likeArtist">
+            <h2>Artist like:<span id="searchedArtist"></span></h2>
+            <ul>
 
+            </ul>
+          </div>
+        </div>
+        <div class="col">
+          
+        </div>
+        <div class="col">
+          
         </div>
       </div>
+
     </div>
    
 
