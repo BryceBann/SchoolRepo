@@ -1,0 +1,17 @@
+.jumbotron {
+    background-color: orange;
+}
+.container{
+    background-color: black;
+    color: ghostwhite;
+}
+
+#artistInput{
+    width: 75%;
+    height: 100%;
+}
+
+#search-button{
+    height: 100%;
+    margin-bottom: 0.5%;
+}
