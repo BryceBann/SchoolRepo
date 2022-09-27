@@ -37,7 +37,7 @@ inquirer
   .then((data) => {
     const {name, location, github, linkedin} = data;
 
-  });
+  
 
   const html = `<!DOCTYPE html>
     <html lang="en">
@@ -62,8 +62,8 @@ inquirer
     </body>
     </html>`
 
-  fs.appendFile('lmao.html', `${html}`, function (err) {
+    fs.appendFile('lmao.html', `${html}`, function (err) {
     if (err) throw err;
     console.log('Saved!');
   });
-  
+});
