@@ -5,3 +5,15 @@
 // TODO: Create a new object using the 'Developer' constructor
 
 // TODO: Call the 'introduction()' method on the new object
+
+function Developer(name, tech) {
+    this.name = name;
+    this.tech = tech;
+    this.indroduction = () => {
+            console.log(`this is ${name} his favorite program is ${tech}`);
+        }
+    };
+
+
+const devName = new Developer("bryce", 'JavaScript');
+devName.indroduction()

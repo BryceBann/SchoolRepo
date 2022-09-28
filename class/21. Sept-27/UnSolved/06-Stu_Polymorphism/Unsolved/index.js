@@ -15,18 +15,54 @@ function Student(first, last, age) {
     let response;
     // Return a letter grade if a number grade was passed
     // Ex. 95 => 'A'
-    if (typeof input === 'number') {
+    if(typeof input === 'number'){
       // TODO: Add logic here to return a single letter grade
+      if(inRange(input, 90, 100)){
+        response = 'A'
+      }
+     else if(inRange(input, 80, 89)){
+        response = 'B'
+      }
+      else if(inRange(input, 70, 79)){
+        response = 'C'
+      }
+      else if(inRange(input, 60, 69)){
+        response = 'D'
+      }
+      else if(inRange(input < 59)){
+        response = 'F'
+      }
       return response;
     }
+  }
     // Return a range if a letter grade was passed
     // Ex. 'A' => '90 - 100'
-    if (typeof input === 'string') {
+    if(typeof input === 'number'){
       // TODO: Add logic here to return range as a string
+
+      //make switch and case 
+      if(inRange(input, 'A')){
+        response = '90-100'
+      }
+     else if(inRange(input, 'B')){
+        response = '80-89'
+      }
+      else if(inRange(input, 'C')){
+        response = '70-79'
+      }
+      else if(inRange(input, 'D')){
+        response = '60-69'
+      }
+      else if(inRange(input, 'F')){
+        response = '0-59'
+      }
       return response;
-    }
-  };
-}
+   }
+ }
+   
+    
+  
+
 
 const John = new Student('John', 'Appleseed', '30');
 console.log('John.displayGrade():', John.displayGrade(95));
