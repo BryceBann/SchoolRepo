@@ -11,10 +11,10 @@ const sortHelper = (type) =>
   termData.sort(sortData('term', 'relevance', `${type}`));
 
 // TODO: Add a comment describing the functionality of this route
-
+//pulls the data from the terms.json file
 app.get('/api/terms/', (req, res) => {
   // TODO: Add a comment describing the req.query object
-
+  //
   const hasQuery = Object.keys(req.query).length > 0;
 
   if (hasQuery && req.query.sort === 'dsc') {
@@ -30,10 +30,10 @@ app.get('/api/terms/', (req, res) => {
 });
 
 // TODO: Add a comment describing what this route will return
-
+//will return a specfic term in the term.json file if not there will thre "no term found"
 app.get('/api/term/:term', (req, res) => {
   // TODO: Add a comment describing the content of req.params in this instance
-
+//will return all the info included i nthe specified term
   const requestedTerm = req.params.term.toLowerCase();
 
   for (let i = 0; i < termData.length; i++) {
@@ -47,7 +47,7 @@ app.get('/api/term/:term', (req, res) => {
 });
 
 // TODO: Add a comment describing what this route will return
-
+//will return all the terms in the json file that have the coresponding category
 app.get('/api/terms/:category', (req, res) => {
   const requestedCategory = req.params.category.toLowerCase();
   const result = [];
@@ -62,7 +62,7 @@ app.get('/api/terms/:category', (req, res) => {
 });
 
 // TODO: Add a comment describing what this route will return
-
+//will return all the cateories of the json file
 app.get('/api/categories', (req, res) => {
   const categories = termData.map((term) => term.category);
 
