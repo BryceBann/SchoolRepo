@@ -2,3 +2,4 @@
 DROP DATABASE IF EXISTS sample_db;
 -- Creates the sample_db database --
 CREATE DATABASE sample_db;
+
