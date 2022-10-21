@@ -2,7 +2,7 @@ const router = require('express').Router();
 const Book = require('../../models/Book');
 
 // Updates book based on its book_id
-router.put('/:book_id', (req, res) => {
+router.post('/:book_id', (req, res) => {
   //Calls the update method on the Book model
   Book.update(
     {

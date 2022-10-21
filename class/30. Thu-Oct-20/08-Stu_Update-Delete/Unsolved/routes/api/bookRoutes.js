@@ -2,13 +2,49 @@ const router = require('express').Router();
 const Book = require('../../models/Book');
 
 // TODO finish the PUT route to UPDATE a book in the database with a matching book_id
+router.get('/', (req, res) => {
+  Book.findAll().then((bookData) => {
+    res.json(bookData);
+  });
+});
+
 router.put('/:book_id', (req, res) => {
-  
+  Book.update(
+    {
+    title: req.body.title,
+    author: req.body.author,
+    isbn: req.body.isbn,
+    pages: req.body.pages,
+    edition: req.body.edition,
+    is_paperback: req.body.is_paperback
+    },
+    {
+      where:{
+        book_id: req.library_db.book_id
+      },
+    }
+  )
+  .then((updateBook) =>{
+    res.json(updateBook)
+  })
+  .catch((err) => {
+    console.log(err);
+    res.json(err);
+  });
   
 });
 
 // TODO finish the DELETE route to DELETE a book in the database with a matching book_id
 router.delete('/:book_id', (req, res) => {
+  Book.destroy({
+    where: {
+      book_id: req.params.book_id,
+    },
+  })
+  .then((deleteBook) => {
+    res.json(deleteBook);
+  })
+  .catch((err) => res.json(err));
   
 });
 

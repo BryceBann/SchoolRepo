@@ -1,9 +1,11 @@
 const Sequelize = require('sequelize');
 
+require('dotenv').config();
+
 const sequelize = new Sequelize(
-  'library_db',
-  'root',
-  'myPassword',
+  PROCCESS.ENV.DB_NAME,
+  PROCCESS.ENV.DB_USER,
+  PROCCESS.ENV.DB_PASSWORD,
   {
     host: 'localhost',
     dialect: 'mysql',
