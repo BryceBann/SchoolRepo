@@ -2,6 +2,18 @@ const router = require('express').Router();
 const User = require('../../models/User');
 
 // TODO: Use try/catch to catch errors
+router.post('/', async (req, res) => {
+  try{
+    const userData = await User.findByPk(req.params.id);
+    if (!userData) {
+    res.status(404).json({message: "no user data"});
+    return;
+   }
+    res.status(200).json(userData);
+  }catch (err) {
+    res.status(400).json(err);
+  }
+});
 // TODO: Return the appropriate HTTP status codes
 
 // GET a user

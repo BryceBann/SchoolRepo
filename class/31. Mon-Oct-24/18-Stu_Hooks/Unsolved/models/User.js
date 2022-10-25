@@ -34,7 +34,19 @@ User.init(
   },
   {
     // TODO: Add hooks here
+hook: {
+  beforeCreate: async(newUserData) => {
+    newUserData.password = await bcrypt.hash(newUserData.password,10);
+    return newUserData;
+  },
+  beforeUpdate: async(updateUserData) => {
+    if (updateUserData.password) {
+    updateUserData.password = await bcrypt.hash(updateUserData.password, 10);
+    }
+    return updateUserData;
 
+  },
+},
     sequelize,
     timestamps: false,
     freezeTableName: true,
