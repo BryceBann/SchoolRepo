@@ -4,7 +4,8 @@
     "browser": true,
     "commonjs": true,
     "node": true,
-    "es6": true
+    "es6": true,
+    "es8": true
     // TODO: Add option to support ** operators
   },
   "rules": {
@@ -31,6 +32,7 @@
     "indent": ["error", 2],
     "quotes": ["error", "single"],
     "semi": ["error", "always"],
-    "radix": "off"
+    "radix": "off",
+    "no-undef-init": "error"
   }
 }
