@@ -5,9 +5,11 @@ function avg(array) {
     for(let i = 0; i < array.length; i++) {
       total += array[i];
     }
+    //total is accessible in the sums execution
+    return total;
   }
-  
-  return total/array.length;
+  //value of total is returned to where sum() is invoked
+  return sum()/array.length;
 }
 
 module.exports = avg;
