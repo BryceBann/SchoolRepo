@@ -48,6 +48,9 @@ app.use(express.json());
 app.get('/read', (req, res) => {
   db.collection('numberList')
     .find()
+    .sort({ number: -1 })
+    .skip(2)
+    .limit(9)
     .toArray((err, results) => {
       if (err) throw err;
       res.send(results);

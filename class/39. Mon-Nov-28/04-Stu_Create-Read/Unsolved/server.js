@@ -7,7 +7,7 @@ const port = 3001;
 const connectionStringURI = `mongodb://127.0.0.1:27017/inventoryDB`;
 
 let db;
-
+// conencting to the database 
 mongodb.connect(
   connectionStringURI,
   { useNewUrlParser: true, useUnifiedTopology: true },
@@ -20,7 +20,7 @@ mongodb.connect(
 );
 
 app.use(express.json());
-
+// inserting into the database with the required uinput information
 app.post('/create', (req, res) => {
   db.collection('bookCollection').insertOne(
     { title: req.body.title, author: req.body.author },
@@ -30,7 +30,7 @@ app.post('/create', (req, res) => {
     }
   );
 });
-
+// hard code to insert to book titles to the collection database without author data
 app.post('/create-many', function (req, res) {
   db.collection('bookCollection').insertMany(
     [
@@ -43,7 +43,7 @@ app.post('/create-many', function (req, res) {
     }
   );
 });
-
+// displays all the data enter to the data base wit the unique id's created and other related data
 app.get('/read', (req, res) => {
   db.collection('bookCollection')
     .find({})
