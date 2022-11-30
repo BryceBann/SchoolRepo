@@ -1,3 +1,4 @@
+const { json } = require('express');
 const express = require('express');
 const db = require('./config/connection');
 // Require model
@@ -63,6 +64,20 @@ app.post('/find-one-update/:genre', (req, res) => {
   // TODO: Write a route that will find the first instance of a document that contains a name with the value equal to 'Kids'
   // Update that name with the value given from the URL param
   // Return the updated document
+  Genre.findOneAndUpdate(
+    {name: 'kids'},
+    {name: req.params.genre},
+    {new: true},
+    (err, result) => {
+      if (result) {
+        res.status(200).json(result);
+        console.log(`updated: ${result}`);
+      }else{
+        console.log('there was an error lol W')
+        res.status(500).json({message: 'something bad'})
+      }
+    }
+  );
 });
 
 db.once('open', () => {
