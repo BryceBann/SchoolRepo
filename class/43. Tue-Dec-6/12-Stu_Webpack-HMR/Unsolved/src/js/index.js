@@ -3,6 +3,14 @@ import { headerClick } from './header';
 import '../css/style.css';
 import Yellow from '../images/yellow-robot.png';
 
+if(module.hot) {
+    module.hot.accept((err) => {
+        if (err) {
+        console.log('Cannot apply HMR update', err)
+        }
+    })
+}
+
 document.getElementById('boxBtn').addEventListener('click', boxClick);
 document.getElementById('headerBtn').addEventListener('click', headerClick);
 
