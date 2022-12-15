@@ -1,5 +1,6 @@
-import OmdbContainer from './components/OmdbContainer';
+import React from "react";
+import PortfolioContainer from "./components/PortfolioContainer";
 
-export default function App() {
-  return <OmdbContainer />;
-}
+const App = () => <PortfolioContainer />;
+
+export default App;
