@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/aye-yo/static/css/main.c2cab247.css",
+    "main.js": "/aye-yo/static/js/main.7f56812e.js",
+    "index.html": "/aye-yo/index.html",
+    "main.c2cab247.css.map": "/aye-yo/static/css/main.c2cab247.css.map",
+    "main.7f56812e.js.map": "/aye-yo/static/js/main.7f56812e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c2cab247.css",
+    "static/js/main.7f56812e.js"
+  ]
+}
