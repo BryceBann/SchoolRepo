@@ -22,26 +22,30 @@ const resolvers = {
   Mutation: {
     // TODO: Add comments to each line of code below to describe the functionality below
     addUser: async (parent, args) => {
+      // create the user
       const user = await User.create(args);
+      // sign them right after creation 
       const token = signToken(user);
-
+      // returntoke nwith signed token and users information
       return { token, user };
     },
     // TODO: Add comments to each line of code below to describe the functionality below
     login: async (parent, { email, password }) => {
+      // find the user passed on email because email will be unique to user
       const user = await User.findOne({ email });
-
+      // if no user with that email end out error message
       if (!user) {
         throw new AuthenticationError('Incorrect credentials');
       }
-
+      // if the user is found on the email check password for match to user
       const correctPw = await user.isCorrectPassword(password);
-
+      // if the password is incorrect return error message
       if (!correctPw) {
         throw new AuthenticationError('Incorrect credentials');
       }
-
+      // if all match sig user into accoubnt
       const token = signToken(user);
+      // return signedtoken and user information
       return { token, user };
     },
     addThought: async (parent, { thoughtText, thoughtAuthor }) => {
