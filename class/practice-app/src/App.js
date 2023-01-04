@@ -1,14 +1,22 @@
-import React from "react";
-import Header from "./components/Header";
-import Section from "./components/Section";
-import Navbar from "./components/Navbar";
+import React, { useEffect } from 'react';
+import { StudentProvider } from './utils/StudentContext';
+import StudentList from './components/StudentList';
+import './app.css';
 
 function App() {
+  const title = 'Activity 4: Consumers';
+  useEffect(() => {
+    document.title = title;
+  }, []);
+
   return (
-    <div>
-      <Navbar />
-      <Header />
-      <Section />
+    <div className="app">
+      <h1>22.1 State</h1>
+      <h4 style={{ color: 'lightseagreen' }}>{title}</h4>
+      {/* Provider wraps all the logic that handles/updates our state */}
+      <StudentProvider>
+        <StudentList />
+      </StudentProvider>
     </div>
   );
 }
