@@ -7,10 +7,11 @@ import CommentList from '../components/CommentList';
 import CommentForm from '../components/CommentForm';
 
 import { QUERY_SINGLE_THOUGHT } from '../utils/queries';
+import { useParams } from 'react-router-dom';
 
 const SingleThought = () => {
   // TODO: Add code here to retrieve the query parameter `thoughtId` from the URL
-
+const { thoughtId } = useParams();
   const { loading, data } = useQuery(QUERY_SINGLE_THOUGHT, {
     // Pass the `thoughtId` URL parameter into query to retrieve this thought's data
     variables: { thoughtId: thoughtId },
