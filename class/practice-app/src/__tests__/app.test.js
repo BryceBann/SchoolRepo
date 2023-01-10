@@ -1,11 +1,11 @@
 import { render } from '@testing-library/react';
-import StudentList from '../components/studentList';
-import { StudentProvider } from '../utils/studentContext';
+import CarComponent from '../components/CarComponent';
+import CarProvider from '../utils/CarContext';
 
-test('StudentList renders', () => {
+test('CarComponent renders', () => {
   render(
-    <StudentProvider>
-      <StudentList />
-    </StudentProvider>
+    <CarProvider>
+      <CarComponent />
+    </CarProvider>
   );
 });

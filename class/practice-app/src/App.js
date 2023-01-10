@@ -1,24 +1,16 @@
 import React, { useEffect } from 'react';
-import { StudentProvider } from './utils/StudentContext';
-import StudentList from './components/StudentList';
-import './app.css';
+import CarComponent from './components/CarComponent';
+// Importing our theme provider which will make our global state available to child components
+import CarProvider from './utils/CarContext';
 
-function App() {
-  const title = 'Activity 4: Consumers';
+export default function App() {
   useEffect(() => {
-    document.title = title;
+    document.title = 'Digital Garage';
   }, []);
 
   return (
-    <div className="app">
-      <h1>22.1 State</h1>
-      <h4 style={{ color: 'lightseagreen' }}>{title}</h4>
-      {/* Provider wraps all the logic that handles/updates our state */}
-      <StudentProvider>
-        <StudentList />
-      </StudentProvider>
-    </div>
+    <CarProvider>
+      <CarComponent />
+    </CarProvider>
   );
 }
-
-export default App;
