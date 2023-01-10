@@ -1,11 +1,10 @@
-import React, { useReducer, useState } from 'react';
-import { useCar } from '../utils/CarContext';
-import reducer from '../utils/reducers';
+import React, { useState } from 'react';
+import { useDispatch, useSelector } from 'react-redux';
 import { START_CAR, STOP_CAR, ADD_CAR } from '../utils/actions';
 
 export default function CarComponent() {
-  const initialState = useCar();
-  const [state, dispatch] = useReducer(reducer, initialState);
+  const dispatch = useDispatch();
+  const state = useSelector((state) => state);
 
   const [newCarMake, setNewCarMake] = useState('');
   const [newCarModel, setNewCarModel] = useState('');
